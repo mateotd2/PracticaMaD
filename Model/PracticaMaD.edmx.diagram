@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8a2ad3211b8543a0b0f43c714ce239da" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="Es.Udc.DotNet.PracticaMaD.Comment" Width="1.5" PointX="4.125" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.PracticaMaD.GroupUsers" Width="1.5" PointX="2.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.PracticaMaD.Recommendation" Width="2.125" PointX="7.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.PracticaMaD.SportEvent" Width="1.5" PointX="7.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.PracticaMaD.Tag" Width="1.5" PointX="4.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.PracticaMaD.UserProfile" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <AssociationConnector Association="Es.Udc.DotNet.PracticaMaD.FK_CommentSportEventId" ManuallyRouted="false" />
+        <AssociationConnector Association="Es.Udc.DotNet.PracticaMaD.FK_CommentUserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Es.Udc.DotNet.PracticaMaD.FK_GroupUsersOwner" ManuallyRouted="false" />
+        <AssociationConnector Association="Es.Udc.DotNet.PracticaMaD.FK_Recommendation_EventId" ManuallyRouted="false" />
+        <AssociationConnector Association="Es.Udc.DotNet.PracticaMaD.FK_RecommendationUserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Es.Udc.DotNet.PracticaMaD.GroupUsersUserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="Es.Udc.DotNet.PracticaMaD.RecommendationGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="Es.Udc.DotNet.PracticaMaD.TagComment" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.PracticaMaD.Category" Width="1.5" PointX="5.5" PointY="9.375" />
+        <AssociationConnector Association="Es.Udc.DotNet.PracticaMaD.FK_Category" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.PracticaMaD.Favorite" Width="1.5" PointX="10" PointY="5" />
+        <AssociationConnector Association="Es.Udc.DotNet.PracticaMaD.FK_EVENT" />
+        <AssociationConnector Association="Es.Udc.DotNet.PracticaMaD.FK_OWNER" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

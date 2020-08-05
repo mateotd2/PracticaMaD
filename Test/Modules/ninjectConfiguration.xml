@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<module name="ninjectConfiguration">
+
+  <bind service="Es.Udc.DotNet.PracticaMaD.Model.UserProfileDao.IUserProfileDao, PracticaMaD.Model"
+        to="Es.Udc.DotNet.PracticaMaD.Model.UserProfileDao.UserProfileDaoEntityFramework, PracticaMaD.Model" />
+
+  <bind service="Es.Udc.DotNet.PracticaMaD.Model.SportEventDao.ISportEventDao, PracticaMaD.Model"
+    to="Es.Udc.DotNet.PracticaMaD.Model.SportEventDao.SportEventDaoEntityFramework, PracticaMaD.Model" />
+  
+  <bind service="Es.Udc.DotNet.PracticaMaD.Model.UserService.IUserService, PracticaMaD.Model"
+      to="Es.Udc.DotNet.PracticaMaD.Model.UserService.UserService, PracticaMaD.Model" />
+  
+  <bind service="Es.Udc.DotNet.PracticaMaD.Model.CategoryDao.ICategoryDao, PracticaMaD.Model"
+      to="Es.Udc.DotNet.PracticaMaD.Model.CategoryDao.CategoryDaoEntityFramework, PracticaMaD.Model" />
+
+   <bind service="Es.Udc.DotNet.PracticaMaD.Model.FavoritesDao.IFavoritesDao, PracticaMad.Model"
+      to="Es.Udc.DotNet.PracticaMaD.Model.FavoritesDao.FavoritesDaoEntityFramework, PracticaMaD.Model "/>	
+
+
+  <bind service="System.Data.Entity.DbContext, EntityFramework"
+      to="System.Data.Entity.DbContext, EntityFramework"
+>
+    <metadata key="nameOrConnectionString" value="metadata=res://*/PracticaMaD.Model.csdl|res://*/PracticaMaD.Model.ssdl|res://*/PracticaMaD.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=localhost\SQLExpress;Initial Catalog=practica_bd_test;Integrated Security=True;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient"    />
+  </bind>
+
+</module>
